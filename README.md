@@ -1,79 +1,95 @@
-ThatOneGuy's Soundboard
+ThatOneGuy's Soundboard 🎵
 
-A customizable web soundboard featuring a sleek dark glass theme, interactive buttons, favorites, search, and a start page overlay. Perfect for quickly playing sound effects with style.
+A sleek, glass-themed web soundboard with interactive buttons, search, favorites, and a stylish dark aesthetic. Perfect for playing sound effects quickly and easily.
 
-Features
+⚡ Features
 
-Glass-style dark theme matching your aesthetic.
+Glass-style dark theme with blur effects.
 
-Start page overlay with “Enter” button.
+Start page overlay with an “Enter” button.
 
 Interactive sound buttons with press animations.
 
-Favorites toggle to show favorite sounds.
+Favorites toggle to show only favorite sounds.
 
-Overlap toggle to allow multiple sounds at once.
+Overlap toggle for playing multiple sounds simultaneously.
 
-Stop all sounds button.
+Stop all sounds button to instantly stop everything.
 
-Search bar to quickly filter sounds.
+Search functionality to quickly filter sounds.
 
-Easy to add your own sounds.
+Fully customizable sounds and colors.
 
-Demo
+🎬 Demo
 
-You can preview the soundboard locally by opening index.html in a modern web browser.
+You can preview the soundboard locally:
 
-Installation
-
-Clone the repository
+Clone the repository:
 
 git clone https://github.com/YourUsername/soundboard.git
 
 
-Open index.html in a browser (Chrome, Firefox, or Edge recommended).
+Open index.html in a modern browser (Chrome, Firefox, or Edge recommended).
 
-Optional: Customize sounds by editing sounds.js:
+Optional: Deploy on GitHub Pages for a live demo.
+
+🛠 Installation & Usage
+
+Edit sounds.js to add your own sounds:
 
 export const sounds = [
-  { name: 'Laugh', url: 'sounds/laugh.mp3', color: '#ff5555' },
-  { name: 'Clap', url: 'sounds/clap.mp3', color: '#55ff55' }
+  { name: 'Laugh', url: 'sounds/laugh.mp3', color: '#777' },
+  { name: 'Clap', url: 'sounds/clap.mp3', color: '#555' }
 ];
 
-Usage
 
-Click Enter on the start page to show the soundboard.
+Open index.html in a browser.
 
-Click any sound button to play the sound.
+Click Enter on the start page.
 
-Use Stop All Sounds to immediately stop everything.
+Click any sound button to play sounds.
 
-Use the Favorites toggle to filter favorite sounds.
+Use Favorites or Search to filter buttons.
 
-Use the Search bar to find sounds by name.
+Use Stop All Sounds to stop playback.
 
-Customization
+🎨 Customization
 
-Theme: Change the glass color by editing #startpage or .sound-button-img in the CSS.
+Theme & colors: Adjust the glass effect in CSS:
 
-Button colors: Set individual button colors in sounds.js via the color property.
+#startpage {
+    background: rgba(30,30,30,0.85);
+    backdrop-filter: blur(10px);
+}
+.sound-button-img {
+    background-color: var(--btn-color);
+}
 
-Add sounds: Place audio files in a folder and add entries in sounds.js.
 
-Contributing
+Add or remove sounds: Modify sounds.js entries.
+
+Button size & layout: Adjust .sound-wrapper and .sound-button-img in CSS.
+
+🤝 Contributing
 
 Fork the repository.
 
-Create a new branch for your feature.
+Create a new branch: git checkout -b feature-name.
 
-Submit a pull request with a description of your changes.
+Make your changes and commit them: git commit -m "Add feature".
 
-License
+Push to your branch: git push origin feature-name.
 
-This project is open-source. You can modify and distribute it freely.
+Open a Pull Request explaining your changes.
 
-Credits
+📜 License
 
-Background image: Pixabay
+This project is open-source. You may use, modify, and distribute it freely.
+
+🙌 Credits
+
+Background images: Pixabay
 
 Sound button images: jsDelivr / GitHub
+
+Inspired by custom soundboard layouts.
